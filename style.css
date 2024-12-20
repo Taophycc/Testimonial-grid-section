@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.grid-container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    gap: 25px;
+    
+}
+
+.grid-one {
+    grid-column: span 2;
+    grid-row:1/2 ;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position:right 70px bottom 180px ;
+    border-radius: 10px;
+    padding: 2em;
+    
+
+}
+
+.grid-one h3{
+    color: rgb(255, 246, 255);
+    margin-top: 0.7em;
+    font-weight: 550;
+}
+
+.grid-one p {
+    color: rgb(255, 246, 255);
+    opacity: 0.5;
+    margin-top: 0.9em;
+    font-size: 0.9rem;
+}
+
+.para-1 p, .para-1 h4 {
+    margin: 0.5em 0em 0em 1em;
+}
+
+.para-1 p {
+    color: rgb(255, 246, 255);
+}
+
+.para-1 h4 {
+    color: rgb(255, 246, 255);
+    font-weight: 450;
+}
+.grid-two {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 2em;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+}
+
+.para-2 p, .para-2 h4 {
+    margin: 0.5em 0em 0em 1em;
+}
+
+.para-2 h4 {
+    color: rgb(255, 246, 255);
+    font-weight: 450;
+}
+
+.para-2 p {
+    margin-top: 0.5em;
+}
+
+.grid-two h3 {
+    color: rgb(255, 246, 255);
+    margin-top: 0.7em;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.grid-two p {
+    color: rgb(255, 246, 255);
+    opacity: 0.6;
+    margin-top: 0.9em;
+    font-size: 0.9rem;
+}
+.grid-three {
+    grid-column: 4/5;
+    grid-row: span 2;
+    border-radius: 10px;
+    padding: 2em;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.para-3 p, .para-3 h4 {
+    margin: 0.5em 0em 0em 1em;
+}
+
+.para-3 h4 {
+    color: hsl(217, 19%, 35%);
+    font-weight: 450;
+}
+
+.para-3 > p {
+    margin-top: 0em;
+    color: green;
+}
+
+.grid-three h3 {
+    color: hsl(217, 19%, 35%);
+    margin-top: 0.7em;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.grid-three p {
+    color: hsl(217, 19%, 35%);
+    opacity: 0.6;
+    margin-top: 1.2em;
+    font-size: 0.92rem;
+}
+
+.grid-four {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 10px;
+    padding: 2em;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+.para-4 p, .para-4 h4 {
+    margin: 0.5em 0em 0em 1em;
+}
+
+.para-4 h4 {
+    color: hsl(217, 19%, 35%);
+    font-weight: 450;
+}
+
+.para-4 p {
+    margin-top: 0.5em;
+}
+
+.grid-four h3 {
+    color:hsl(217, 19%, 35%);
+    margin-top: 0.7em;
+    font-size: 1.4rem;
+    margin-bottom: 1.1em;
+    font-weight: 550;
+}
+
+.grid-four p {
+    color: hsl(217, 19%, 35%);
+    opacity: 0.6;
+    margin-top: 0.9em;
+    font-size: 0.9rem;
+}
+
+.grid-five {
+    grid-column: span 2;
+    grid-row: 2/3;
+    border-radius: 10px;
+    padding: 2em;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.para-5 p, .para-5 h4 {
+    margin: 0.5em 0em 0em 1em;
+}
+
+.para-5 h4 {
+    color: rgb(255, 246, 255);
+    font-weight: 450;
+}
+
+.para-5 p {
+    margin-top: 0.5em;
+}
+
+.grid-five h3 {
+    color: rgb(255, 246, 255);
+    margin-top: 0.7em;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.grid-five p {
+    color: rgb(255, 246, 255);
+    opacity: 0.6;
+    margin-top: 1.1em;
+    font-size: 0.88rem;
+}
+
+.profile-container {
+    display: flex;
+}
+
+img {
+    border-radius: 50%;
+}
+
+@media (min-width:320px) and (max-width:600px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        padding: 2em;
+    }
+
+    .grid-one {
+        order: 1;
+        grid-column: 1/2;
+    }
+    .grid-two {
+        order: 2;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        
+    }
+
+    .grid-four {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: auto;
+    }
+
+    .grid-five {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .grid-three {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+}
+
+@media (min-width:601px) and (max-width:1030px) {
+    .container {
+        height: 100vh;
+    }
+    .grid-container {
+        width: 90%;
+        height: 90%;
+        grid-auto-rows: minmax(200px, 400px);
+        padding: 2em;
+    }
+
+    img {
+        width: 40px;
+        height: auto;
+    }
+
+    .grid-one {
+        padding: 1.5em;
+    }
+    .grid-one h3 {
+        font-size: 1rem;
+    }
+
+    .grid-one p {
+        font-size: 0.9rem;
+    }
+    .grid-two {
+        padding: 1.5em;
+    }
+
+    .grid-two h3{
+        font-size: 1rem;
+    }
+
+    .grid-two p {
+        font-size: 0.9em;
+    }
+
+    .para-2 p {
+        margin-top: 0em;
+    }
+
+    .grid-three {
+        padding: 1.5em;
+    }
+    .grid-three h3{
+        font-size: 1rem;
+    }
+
+    .grid-three p{
+        font-size: 0.74rem;
+    }
+
+    .para-3 p {
+        margin-top: 0.1em;
+    }
+
+    .grid-four {
+        padding: 1.5em;
+    }
+    .grid-four h3 {
+        font-size: 1rem;
+    }
+
+    .grid-four p {
+        font-size: 0.8rem;
+    }
+
+    .para-4 p {
+        margin-top: 0.2em;
+    }
+
+    .grid-five h3 {
+        font-size: 1em;
+    }
+
+    .grid-five p {
+        font-size: 0.9em;
+    }
+
+    
+}
