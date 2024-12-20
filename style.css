@@ -30,7 +30,7 @@ body {
     grid-column: span 2;
     grid-row:1/2 ;
     background-color: hsl(263, 55%, 52%);
-    background-image: url(images/bg-pattern-quotation.svg);
+    background-image: url(bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position:right 70px bottom 180px ;
     border-radius: 10px;
