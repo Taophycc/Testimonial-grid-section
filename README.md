@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [taopycc.github.io](https://your-solution-url.com)
+- Solution URL: [taopycc.github.io](https://github.com/Taophycc/Testimonial-grid-section.git)
 - Live Site URL: [taopycc.github.io](https://taophycc.github.io/Testimonial-grid-section/)
 
 ### Built with
