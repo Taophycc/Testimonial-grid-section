@@ -232,6 +232,7 @@ img {
     .grid-one {
         order: 1;
         grid-column: 1/2;
+        background-position:right 30px bottom 330px ;
     }
     .grid-two {
         order: 2;
